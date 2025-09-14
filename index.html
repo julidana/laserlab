@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaserLab - Servicio de Cortadora y Grabadora Láser para Estudiantes FADU</title>
+    <meta name="description" content="Servicio profesional de cortadora y grabadora láser para proyectos estudiantiles FADU. Materiales, diseños y asesoría especializada con descuentos especiales.">
+    <meta name="keywords" content="corte laser, grabado laser, FADU, estudiantes, proyectos, maquetas, Buenos Aires">
+    <meta property="og:title" content="LaserLab - Corte y Grabado Láser para Estudiantes FADU">
+    <meta property="og:description" content="Servicio profesional con descuentos especiales para estudiantes de FADU">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#dc2626",
+                        secondary: "#ea580c",
+                        accent: "#f59e0b",
+                        dark: "#1e293b",
+                        light: "#f8fafc"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-white font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-fire text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-dark">LaserLab</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-dark hover:text-primary transition-colors">Inicio</a>
+                <a href="#servicios" class="text-dark hover:text-primary transition-colors">Servicios</a>
+                <a href="#materiales" class="text-dark hover:text-primary transition-colors">Materiales</a>
+                <a href="#precios" class="text-dark hover:text-primary transition-colors">Precios</a>
+                <a href="#contacto" class="text-dark hover:text-primary transition-colors">Contacto</a>
+            </div>
+            
+            <a href="https://wa.me/5491123264173?text=Hola!%20Me%20interesa%20solicitar%20un%20presupuesto%20para%20mi%20proyecto%20de%20corte%20l%C3%A1ser.%20" target="_blank" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors hidden md:block">
+                Solicitar Presupuesto
+            </a>
+            
+            <button class="md:hidden text-dark">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="bg-gradient-to-r from-red-600 to-orange-600 text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Corte y Grabado Láser para Proyectos Estudiantiles</h1>
+                <p class="text-xl mb-8">Servicio profesional con precios especiales para estudiantes. Materiales de calidad y asesoría técnica incluida.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5491123264173?text=Hola!%20Me%20interesa%20solicitar%20un%20presupuesto%20para%20mi%20proyecto%20de%20corte%20l%C3%A1ser.%20" target="_blank" class="bg-accent text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors text-center">
+                        Solicitar Servicio
+                    </a>
+                    <button class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Ver Ejemplos
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img 
+                    src="img_fondo_01.jpg" 
+                    alt="Máquina de corte láser profesional" 
+                    class="rounded-lg shadow-xl w-auto object-contain"
+                        style="height: 30rem;"
+                    loading="lazy"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Nuestros Servicios</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-cut text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Corte de Precisión</h3>
+                    <p class="text-gray-600">Corte láser de alta precisión para materiales como PVC, madera, MDF y más. Ideal para maquetas y prototipos.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-pen-fancy text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Grabado Láser</h3>
+                    <p class="text-gray-600">Grabado detallado en múltiples superficies. Perfecto para personalizar proyectos, trofeos y material didáctico.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Asesoría en Diseño</h3>
+                    <p class="text-gray-600">Te ayudamos a optimizar tus diseños para el corte láser. Revisiones de archivos y recomendaciones técnicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materiales" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Materiales Disponibles</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        src="PVC.jpg" 
+                        alt="PVC de colores" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">PVC</h3>
+                        <p class="text-gray-600">Variedad de colores y espesores. Ideal para letreros y displays.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        src="mdf.jpg" 
+                        alt="MDF" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">MDF</h3>
+                        <p class="text-gray-600">Perfecto para maquetas arquitectónicas y proyectos de diseño.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img 
+                        src="carton.jpg" 
+                        alt="Cartón" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Cartón</h3>
+                        <p class="text-gray-600">Material versátil para prototipos y proyectos estudiantiles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precios" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Consulta tu Proyecto</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-semibold text-dark mb-4">Precios especiales para estudiantes</h3>
+                        <p class="text-gray-600 text-lg">Cada proyecto es único, por eso ofrecemos presupuestos personalizados. Contáctanos y te damos una cotización inmediata.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-4 text-dark">Factores que influyen en el precio:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i class="fas fa-clock text-primary mr-3"></i>
+                                    <span>Tiempo de uso de máquina</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-layer-group text-primary mr-3"></i>
+                                    <span>Tipo de material</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-puzzle-piece text-primary mr-3"></i>
+                                    <span>Complejidad del diseño</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-copy text-primary mr-3"></i>
+                                    <span>Cantidad de piezas</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-shipping-fast text-primary mr-3"></i>
+                                    <span>Urgencia de entrega</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="text-xl font-semibold mb-4 text-dark">Consulta rápida</h4>
+                            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-info-circle text-blue-400"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-blue-700">
+                                            <strong>Formato requerido:</strong><br>
+                                            • Tamaño base: 38 x 38 cm<br>
+                                            • Formatos aceptados: PDF o SVG
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://wa.me/5491123264173?text=Hola!%20Me%20interesa%20solicitar%20un%20presupuesto%20para%20mi%20proyecto%20de%20corte%20l%C3%A1ser.%20" target="_blank" class="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors">
+                                    <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                                    Solicitar Presupuesto por WhatsApp
+                                </a>
+                                <p class="text-gray-600 text-sm mt-2">Respuesta inmediata en horario comercial</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            <span class="font-semibold">Descuentos especiales para estudiantes de FADU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Cómo Funciona</h2>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                <div class="flex flex-col items-center text-center mb-8 md:mb-0 md:w-1/4">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">1</div>
+                    <h3 class="font-semibold text-lg mb-2">Envía tu diseño</h3>
+                    <p class="text-gray-600">Sube tus archivos (DXF, SVG, AI) a través de nuestro formulario.</p>
+                </div>
+                
+                <div class="flex flex-col items-center text-center mb-8 md:mb-0 md:w-1/4">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">2</div>
+                    <h3 class="font-semibold text-lg mb-2">Revisión técnica</h3>
+                    <p class="text-gray-600">Nuestro equipo revisa y optimiza tu diseño para el corte láser.</p>
+                </div>
+                
+                <div class="flex flex-col items-center text-center mb-8 md:mb-0 md:w-1/4">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">3</div>
+                    <h3 class="font-semibold text-lg mb-2">Procesamiento</h3>
+                    <p class="text-gray-600">Ejecutamos el corte o grabado con máquinas de alta precisión.</p>
+                </div>
+                
+                <div class="flex flex-col items-center text-center md:w-1/4">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">4</div>
+                    <h3 class="font-semibold text-lg mb-2">Entrega</h3>
+                    <p class="text-gray-600">Recoge tu proyecto terminado o lo enviamos a tu domicilio.</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="https://wa.me/5491123264173?text=Hola!%20Me%20interesa%20solicitar%20un%20presupuesto%20para%20mi%20proyecto%20de%20corte%20l%C3%A1ser.%20" target="_blank" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
+                    Comenzar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-dark text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contáctanos</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-semibold mb-6">Contáctanos por WhatsApp</h3>
+                        <p class="text-gray-300 mb-8">La forma más rápida y directa de comunicarte con nosotros. Te respondemos inmediatamente en horario comercial.</p>
+                        <a href="https://wa.me/5491123264173?text=Hola!%20Me%20interesa%20obtener%20más%20información%20sobre%20sus%20servicios%20de%20corte%20láser.%20" target="_blank" class="inline-flex items-center bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors text-lg">
+                            <i class="fab fa-whatsapp mr-3 text-2xl"></i>
+                            Escribinos por WhatsApp
+                        </a>
+                        <p class="text-gray-400 text-sm mt-4">+54 9 11 2326-4173</p>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4">Información de Contacto</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fab fa-whatsapp text-primary mt-1 mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">WhatsApp</p>
+                                    <p class="text-gray-400">+54 9 11 2326-4173</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-primary mt-1 mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">Horario de atención</p>
+                                    <p class="text-gray-400">Lunes a Viernes: 9:00 - 18:00</p>
+                                    <p class="text-gray-400">Sábados: 10:00 - 14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Preguntas Frecuentes</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">¿Qué formatos de archivo aceptan?</h3>
+                    <p class="text-gray-600">Aceptamos DXF, SVG, AI, PDF y CDR. Recomendamos enviar archivos vectoriales para mayor precisión en el corte.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">¿Cuánto tiempo tarda el proceso?</h3>
+                    <p class="text-gray-600">El tiempo de entrega varía según la complejidad del proyecto. Proyectos simples pueden estar listos en 24-48 horas, mientras que proyectos complejos pueden tomar hasta 5 días hábiles.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">¿Ofrecen descuentos para grupos o proyectos académicos?</h3>
+                    <p class="text-gray-600">Sí, ofrecemos descuentos especiales para proyectos grupales y trabajos académicos. Contáctanos para más información.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">¿Puedo llevar mi propio material?</h3>
+                    <p class="text-gray-600">Sí, aceptamos materiales proporcionados por el cliente, sujeto a una verificación de compatibilidad con nuestras máquinas láser.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-fire text-white text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold">LaserLab</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Servicio profesional de corte y grabado láser para proyectos estudiantiles.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Enlaces Rápidos</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white transition-colors">Servicios</a></li>
+                        <li><a href="#materiales" class="text-gray-400 hover:text-white transition-colors">Materiales</a></li>
+                        <li><a href="#precios" class="text-gray-400 hover:text-white transition-colors">Precios</a></li>
+                        <li><a href="#contacto" class="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Servicios</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Corte Láser</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Grabado Láser</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Asesoría en Diseño</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Materiales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Proyectos Académicos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Suscríbete para recibir promociones especiales para estudiantes.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Tu email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none w-full">
+                        <button type="submit" class="bg-primary px-4 py-2 rounded-r-lg hover:bg-secondary transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 LaserLab. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Navigation functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
